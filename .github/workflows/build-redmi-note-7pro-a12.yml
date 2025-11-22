@@ -12,8 +12,8 @@ env:
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
   EXTRA_CMDS : "LD=ld.lld LLVM=1 LLVM_IAS=1"
 
-  KERNEL_SOURCE : "https://github.com/LineageOS/android_kernel_xiaomi_sm6150"
-  KERNEL_BRANCH : "lineage-20"
+  KERNEL_SOURCE : "https://github.com/crdroidandroid/android_kernel_xiaomi_violet"
+  KERNEL_BRANCH : "13.0"
 
   CLANG_SOURCE : "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/LLVM-19.1.7-Linux-X64.tar.xz"
   CLANG_BRANCH : ""
@@ -25,7 +25,7 @@ env:
   GCC_32_BRANCH : "android12-release"
 
   DEFCONFIG_SOURCE: ""
-  DEFCONFIG_NAME : "defconfig"
+  DEFCONFIG_NAME : "vendor/violet-perf_defconfig"
   DEFCONFIG_ORIGIN_IMAGE: ""
   DEFCONFIG_FROM_BOOT: false
 
@@ -47,7 +47,7 @@ env:
   NEED_DTBO : false
   NEED_SAFE_DTBO : false
 
-  ROM_TEXT : "PixelExperience_twelve_violet_with_SukiSU-Ultra"
+  ROM_TEXT : "Kernel_violet_with_SukiSU-Ultra"
 
   # Other env
   PYTHON_VERSION: "3" # Only 2(Ubuntu 22.04 and Ubuntu 20.04) or 3(Any OS Versions).
@@ -83,7 +83,7 @@ env:
   BUILD_DEBUGGER: "false" # Output build errors.
   SKIP_PATCH: "false" # Ignore errors found in Patch Debugger.
 
-  BUILD_OTHER_CONFIG: "true" # Merge config files.
+  BUILD_OTHER_CONFIG: "false" # Merge config files.
   MERGE_CONFIG_FILES: "vendor/violet.config"
 
   FREE_MORE_SPACE: "false" # if u want get more space, enabled it.
